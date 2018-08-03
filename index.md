@@ -26,10 +26,10 @@ This tutorial assumes the reader has some background knowledge of the following 
 
 
 ## Files
-* [slides.pdf](slides.pdf) - Presentation slides
+* [slides.pdf](slides.pdf) -- Presentation slides
 
 ### Classifiers
-* [cancerreport.owl](cancerreport.owl) -- class definition for `DiagnosticReport` having a diagnosis of [346325008: Malignant neoplastic disease|](http://snomed.info/id/346325008)
+* [cancerreport.owl](cancerreport.owl) -- class definition for `DiagnosticReport` having a diagnosis of [346325008: Malignant neoplastic disease](http://snomed.info/id/346325008)
 * [patientreport.owl](patientreport.owl) -- class definition for `DiagnosticReport` whose subject is a reference to a fhir:Patient
 * [finalreport.owl](finalreport.owl) -- class definition for `DiagnsosticReport` whose status meets a local definition of "finalized"
 * [finalreport_data.owl](finalreport_data.owl) -- class definition for `DiagnosticReport` whose stats **text** matches what we think counts as "finalized"
@@ -40,7 +40,7 @@ This tutorial assumes the reader has some background knowledge of the following 
 * [diagnosticreport-example-f201-brainct.ttl](diagnosticreport-example-f201-brainct.ttl)
 * [diagnosticreport-example-thyroidtumor.ttl](diagnosticreport-example-thyroidtumor.ttl)
 * [imagingstudy-example-xr.ttl](imagingstudy-example-xr.ttl)
-* [imagingstudy-example-xr-mod.ttl](imagingstudy-example-xr_mod.ttl) - Imaging study w/ sample laterailty transformation
+* [imagingstudy-example-xr-mod.ttl](imagingstudy-example-xr_mod.ttl) -- Imaging study w/ sample laterailty transformation
 
 ### Ontologies and the like
 
@@ -54,29 +54,29 @@ For both of these reasons, to maintain monotonicity in RDF, FHIR/RDF should not 
 
 Application developers should also be aware that some FHIR data attributes have a major impact on the interpretation of the enclosing data element: the meaning of the enclosing element cannot be determined in isolation. For example, a status of 'entered-in-error' means that the resource was created accidentally, and should be ignored ([source](https://www.hl7.org/fhir/linked-data-module.html)).
 
-* [codesystem-diagnostic-report-status.owl](codesystem-diagnostic-report-status.owl) - proposed OWL representation of the `DiagnosticReport.status` code system
-* [fhir.ttl](fhir.ttl) - FHIR Metadata vocabulary with offending `xsd:date`, `xsd:time`, `xsd:base64Binary` and `fhir:xhtml` data types changed to `xsd:dateTime` and `xsd:string`
-* [w5.ttl](w5.ttl) - local copy of the FHIR 5 W's ontology
-* [snomed_cancer_subset.ttl](snomed_cancer_subset.ttl) - an OWL representation of the transitive closure and neighborhood of concepts:
-  * [18834000 |Malignant tumor if craniopharyngeal duct (disorder)|](http://snomed.info/id/188340000)
-  * [394914008 |Radiology - speciality (qualifier value)](http://snomed.info/id/394914008)
-  * [429858000|Computed tomography of head and neck (procedure)|](http://snomed.info/id/429858000)
+* [codesystem-diagnostic-report-status.owl](codesystem-diagnostic-report-status.owl) -- proposed OWL representation of the `DiagnosticReport.status` code system
+* [fhir.ttl](fhir.ttl) -- FHIR Metadata vocabulary with offending `xsd:date`, `xsd:time`, `xsd:base64Binary` and `fhir:xhtml` data types changed to `xsd:dateTime` and `xsd:string`
+* [w5.ttl](w5.ttl) -- local copy of the FHIR 5 W's ontology
+* [snomed_cancer_subset.ttl](snomed_cancer_subset.ttl) -- an OWL representation of the transitive closure and neighborhood of concepts:
+  * [18834000: Malignant tumor if craniopharyngeal duct (disorder)](http://snomed.info/id/188340000)
+  * [394914008: Radiology - speciality (qualifier value)](http://snomed.info/id/394914008)
+  * [429858000: Computed tomography of head and neck (procedure)](http://snomed.info/id/429858000)
      see [SNOMED_CT directory](SNOMED_CT) for description of how this was generated
-* [snomed_thyroid_subset.ttl](snomed_thyroid_subset.ttl) - An OWL representation of the transitive closure of:
-    * [394914008 | Radiology - specialty (qualifier value)](http://snomed.info/id/394914008)
-    * [429858000 | Computed tomography of head and neck (procedure)](http://snomed.info/id/429858000)
-    * [363346000 | Malignant neoplastic disease (disorder)](http://snomed.info/id/363346000)
-    * [363698007 | Finding site (attribute)](http://snomed.info/id/363698007)
-    * [170784008 | Entire left lobe of thyroid gland (body structure)](http://snomed.info/id/170784008)
-    * [14304000 | Disorder of thyroid gland (disorder](http://snomed.info/id/14304000)
+* [snomed_thyroid_subset.ttl](snomed_thyroid_subset.ttl) -- An OWL representation of the transitive closure of:
+    * [394914008:  Radiology - specialty (qualifier value)](http://snomed.info/id/394914008)
+    * [429858000:  Computed tomography of head and neck (procedure)](http://snomed.info/id/429858000)
+    * [363346000:  Malignant neoplastic disease (disorder)](http://snomed.info/id/363346000)
+    * [363698007:  Finding site (attribute)](http://snomed.info/id/363698007)
+    * [170784008:  Entire left lobe of thyroid gland (body structure)](http://snomed.info/id/170784008)
+    * [14304000:  Disorder of thyroid gland (disorder)](http://snomed.info/id/14304000)
     
     see [SNOMED_CT directory](SNOMED_CT) for description of how this was generated
 
 ### Support
-* [catalog-v001.xml](catalog-v001.xml) - XML catalog used by Protégé.  This causes all references to be resolved locally
-* [catalog-v001.backup.xml](catalog-v001.backup.xml) - Backup copy of XML catalog as Protégé tends to scribble on these things if you so much
+* [catalog-v001.xml](catalog-v001.xml) -- XML catalog used by Protégé.  This causes all references to be resolved locally
+* [catalog-v001.backup.xml](catalog-v001.backup.xml) -- Backup copy of XML catalog as Protégé tends to scribble on these things if you so much
 as look at it crosseyed
-* README.md - this file
+* README.md -- this file
 
 ## Use
 1. Install a current version of [Protégé](https://protege.stanford.edu) (we use 5.1.0)
