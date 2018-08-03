@@ -29,12 +29,12 @@ This tutorial assumes the reader has some background knowledge of the following 
 * [slides.pdf](slides.pdf) - Presentation slides
 
 ### Classifiers
-* [cancerreport.owl](cancerreport.owl) : class definition for `DiagnosticReport` having a diagnosis of [346325008| Malignant neoplastic disease|](http://snomed.info/id/346325008)
-* [patientreport.owl](patientreport.owl) : class definition for `DiagnosticReport` whose subject is a reference to a fhir:Patient
-* [finalreport.owl](finalreport.owl) : class definition for `DiagnsosticReport` whose status meets a local definition of "finalized"
-* [finalreport_data.owl](finalreport_data.owl) - class definition for `DiagnosticReport` whose stats **text** matches what we think counts as "finalized"
-* [fullreport.owl](fullreport.owl) : class definition for a finalized `DiagnosticReport` on a patient with a cancer diagnosis
-* [thyroidreport.owl](thyroidreport.owl) : class definition for `DiagnosticReport` having a diagnosis of [14304000 | Disorder of thyroid gland (disorder)](http://snomed.info/id/14304000)
+* [cancerreport.owl](cancerreport.owl) -- class definition for `DiagnosticReport` having a diagnosis of [346325008: Malignant neoplastic disease|](http://snomed.info/id/346325008)
+* [patientreport.owl](patientreport.owl) -- class definition for `DiagnosticReport` whose subject is a reference to a fhir:Patient
+* [finalreport.owl](finalreport.owl) -- class definition for `DiagnsosticReport` whose status meets a local definition of "finalized"
+* [finalreport_data.owl](finalreport_data.owl) -- class definition for `DiagnosticReport` whose stats **text** matches what we think counts as "finalized"
+* [fullreport.owl](fullreport.owl) -- class definition for a finalized `DiagnosticReport` on a patient with a cancer diagnosis
+* [thyroidreport.owl](thyroidreport.owl) -- class definition for `DiagnosticReport` having a diagnosis of [14304000: Disorder of thyroid gland (disorder)](http://snomed.info/id/14304000)
 
 ### Data
 * [diagnosticreport-example-f201-brainct.ttl](diagnosticreport-example-f201-brainct.ttl)
