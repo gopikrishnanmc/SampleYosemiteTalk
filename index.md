@@ -1,6 +1,13 @@
 # FHIR RDF as a Bridge to the Semantic Web in Healthcare
 Supporting materials for presentation to Yosemite group  October 12, 2017.
 
+Your markdown heading here
+<details>
+  <summary>
+    Show details
+  </summary>
+  Your markdown content here
+</details>
 
 ## Introduction
 This tutorial demonstrates how one or more FHIR resources in RDF format can be processed by a reasoner to determine if the given FHIR resource is an instance of a particular Class (as defined in a ontology). Here we use an example of a FHIR DiagnosticReport resource instance that has a diagnosis of malignant neoplasm. We shall feed this FHIR resource into a Description Logics (DL) reasoner to determine if it belongs to a Class called ‘CancerDiagnosis’. This type of exercise can be useful in primary and secondary care institutions to determine the overall number of patients that belong to a particular group of diagnoses, for e.g. Cancer.
