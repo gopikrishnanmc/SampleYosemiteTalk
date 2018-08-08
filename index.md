@@ -39,7 +39,9 @@ Application developers should also be aware that some FHIR data attributes have 
   <summary>
     Show details
   </summary>
+  
 This tutorial assumes the reader has some background knowledge of the following technologies:
+
 * Semantic web technologies and standards
   * OWL, RDF
   * Protege ontology editor
@@ -105,6 +107,7 @@ as look at it crosseyed
   <summary>
     Show details
   </summary>
+  
 1. Install a current version of [Protégé](https://protege.stanford.edu) (we use 5.1.0)
 2. Clone a copy of the [BLENDINGFHIRandRDF](https://github.com/BD2KOnFHIR/BLENDINGFHIRandRDF) repository
 3. Change to the yosemite_talk directory
@@ -118,4 +121,5 @@ as look at it crosseyed
 9. Navigate to `ReportOfThyroidDisease` in the `Class Hierarchy` tab and observe that `dxreport117` has been classified
 as an instance of thyroid disease.
 ![Class Hierarchy Tab](images/img2.png)
+
 </details>
